@@ -14,7 +14,7 @@ const encrypt =require("mongoose-encryption")
 const session =require("express-session");
 const passport=require("passport");
 const passportLocalMongoose=require("passport-local-mongoose");
-mongoose.connect('mongodb+srv://admin-kuldeep:system@cluster0.bmtbm.mongodb.net/toDoDB');
+mongoose.connect('mongodb+srv://admin-kuldeep:<password>@cluster0.bmtbm.mongodb.net/toDoDB');
 const findOrCreate = require('mongoose-findorcreate')
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 app.use(session({
